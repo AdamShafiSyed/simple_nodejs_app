@@ -15,7 +15,7 @@ let rawdata = fs.readFileSync('public/db.json');
 let teamsList = JSON.parse(rawdata);
 
 
-router.get('/', (req, res) => {
+app.get('/', (req, res) => {
     fs.readFile("public/index.html", function (error, pgResp) {
         if (error) {
             res.writeHead(404);
@@ -29,7 +29,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/api', (req, res) => {
+app.get('/api', (req, res) => {
     try {
         res.status(200).json(teamsList);
     } catch (error) {
