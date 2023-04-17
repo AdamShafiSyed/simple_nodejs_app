@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assign3.css">
+
+</head>
+<body>
+  <div class="content">    
+    <div class="topnav" id="navbar">
+            <a class="gray-bg" href="#home">Home</a>
+            <a class="gray-bg" href="#about">  About Me </a>
+            <a class="gray-bg" href="#contact"> Contact</a>
+            <a class="gray-bg" href="https://www.linkedin.com/in/sowmya-kala-234a0413b/">linkedin Profile</a>
+            <a class="gray-bg" href="https://dharanichowdary25.medium.com/">Blog</a>
+            <a class="gray-bg" href="https://github.com/">github</a>
+            <a class="gray-bg" href="http://www.interspeech2020.org/index.php?m=content&c=index&a=show&catid=408&id=1027">Research</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>     
+    </div>
+    <div  class="height" id="about"><h1>YALAMUDI SOWMYAKALA</h1>
+            <div class="import about_me_container" id="myself">
+                <ul>
+                    <li> Enthusiastic learner </li>
+                    <li> learn, code, repeat </li>
+                    <li> Graduate Student at University of New Haven </li>
+                    <li>Data Science Enthusiast</li>
+                    <li>Nature Lover</li>
+                    <li>learn, code, repeat</li>
+                    <li>Graduate Student at University of New Haven</li>
+                    <li>Data Science Enthusiast</li>         
+                </ul>
+                <div class="import" id="m1">
+                    <img class="author_image" src="https://media-exp1.licdn.com/dms/image/C5603AQFArbbXgepFMA/profile-displayphoto-shrink_400_400/0/1604467827084?e=1669248000&v=beta&t=J1gskBE06tR98BlOHguygJjU7ED8m8Wuz7VvQYqJfvQ",alt="">
+                </div>
+            </div>
+            <p> Inquisitive, energetic computer science student skilled in software, web and mobile development, with a strong foundation in math, 
+                logic, and cross-platform coding. Seeking to leverage solid skills in collaboration, communication, and development as a programmer. 
+            </p>               
+    </div>
+    <div id="education"><h3>Education</h3>
+        ● University of New Haven New Haven, Connecticut<br>
+    Master of Science in Computer Science & Engineering(GPA 3.5) January 2022 - May 2023<br>
+    Coursework : Artificial Intelligence and Neural Networks, Database Systems, Distributed Database
+    Systems, Information Retrieval,Data Mining,Cloud Computing.<br>
+    ● Gokaraju Rangaraju Institute of Engineering and Technology Hyderabad, India<br>
+    Bachelors in Computer Science and Engineering August 2016 - September 2020<br>
+    Coursework : Design and Analysis of Algorithms, Operating System, Compiler Design,
+    Micro-controllers, Computer Networks, Database Management Systems, Information Security.
+
+
+    </div>
+    <div id="Project"><h3>Projects</h3>
+        •Pothole detection using Mask RCNN : Developed a program that identifies potholes from a video
+        file and trained it using Mask RCNN which achieved an accuracy of 93%. Using Python, Tensorflow
+        Mask RCNN.<br>
+        •Automated extraction of number plates of motorcyclists not wearing helmets: Developed a
+        program that identifies motorcyclists not wearing helmets in a video file. Captured the frame of the
+        helmet violator and scanned the license plate number using OCR thereby storing both the number
+        and also the frame in the database for future requirements.
+        
+    </div>
+    <div id="Experience"><h3>Experience</h3>
+        • University of New Haven New Haven, USA<br>
+    &nbsp Graduate Teaching Assistant(DataBase) <br>
+    • Tata Consultancy Services , Hyderabad, India November 2020 - December 2021<br>
+    &nbsp Worked in mainframes technology for Kaiser Permanente client developed scripts to
+    update tools using COBOL and JCL<br>
+    &nbsp worked on care delivery application services to support any upgrades and validations.<br>
+    &nbsp Integrated accessibility into TCS’ software development lifecycle by authoring product
+    development guidelines 
+
+    </div>
+    <div id="skills"><h3>Skills</h3>
+        Languages and Frameworks: JavaScript, Python, C++, PHP, Selenium Web driver,
+        Cypress, Hadoop, TestNG, Java.<br>
+        • Database: Oracle DB, MySQL, Mongodb.<br>
+        • Technologies and Build Tools: Docker, AWS Faregate, SVN, Git, Maven, jenkins, CircleCI<br>
+    
+    </div>
+    <div id="contact"><h3>Contact</h3>
+        <a href="https://www.linkedin.com/in/sowmya-kala-234a0413b/">linkedin Profile</a> &nbsp
+            <a href=" https://www.instagram.com/">Instagram</a>&nbsp
+            <a href="http://localhost/wordpress/ ">Blog  </a>&nbsp
+            sowmykalay@gmail.com|+10987654321
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</body>
+<style>
+
+    .container{
+        height: 100vh;
+        font-family: 'Noto-Serif', serif;
+        font-weight: 800;
+        font-size: 1em;
+        color: var(--)yellowish;
+        display: grid;
+        grid-template-rows:1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+             "navbar navbar"
+             "about about"
+             "education education"
+             "Project Project"
+             "Experience Experience"
+             "skills skills"
+             "contact contact" ;
+        gap:0.5em;
+    }
+    .gray-bg{
+        color: #910101;;
+        margin-left: 40px;
+    }
+
+    .h400{
+        height: 350px;
+        background-color: cornsilk;
+        color: #910101;
+        margin: 20px;
+    }
+    #navbar{
+        min-height: 50px;
+        background-color: wheat;
+        /* margin: 20px; */
+        /* padding: auto;
+         */
+        /* padding-top: 15px; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #about{
+        /* height: 500px; */
+        background-color: cornsilk;
+        margin: 20px;
+        padding: auto;
+    }
+    #education{
+        height: 200px;
+        background-color: wheat;
+        margin: 20px;
+        padding: auto;
+    }
+    #Project{
+        height: 150px;
+        background-color: cornsilk;
+        margin: 20px;
+        padding: auto;
+    }
+    #Experience{
+        height: 200px;
+        background-color: wheat;
+        margin: 20px;
+        padding: auto;
+
+    }
+    #skills{
+        height: 100px;
+        background-color: cornsilk;
+        margin: 20px;
+        padding: auto;
+    }
+    #contact{
+        height: 100px;
+        background-color: wheat;
+        margin: 20px;
+        padding: auto;
+    }
+    .about_me_container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .author_image{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 10px;
+        margin: 0 15px;
+    }
+
+    @media only screen and (max-width : 500px) {
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr  2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr ;
+            grid-template-areas:
+            "navbar"
+            "about "
+            "education"
+            "Project"
+            "Experience"
+            "skills"
+            "contact";
+        }
+
+        #navbar{
+            background-color: skyblue;
+        }
+        #education{
+            background-color: skyblue;
+        }
+        #Experience{
+            background-color: skyblue;
+        }
+        #contact{
+            background-color: skyblue;
+        }
+    }
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: #910101;
+    }
+
+    .topnav a:hover {
+        background-color: #910101;
+        color: bisque;
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 375px) {
+        .about_me_container{
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+        #navbar{
+            display: block;
+        }
+        #about, #education, #Project, #Experience, #skills, #contact{
+            height: unset;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
+
+</style>
+</html>
